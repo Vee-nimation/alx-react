@@ -1,11 +1,20 @@
-#count {
-    display: inline;
-    font-weight: bold;
-    margin: 0;
-}
+/* css/main.css */
 #logo {
-    height: 200px;
-    width: 200px;
-    background: url('../assets/holberton-logo.jpg');
-    background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  background: url('../assets/holberton-logo.jpg') no-repeat;
+  background-size: 200px 200px;
+}
+
+button {
+  position: relative;
+}
+
+button::after {
+  content: "Counter Text";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
 }
