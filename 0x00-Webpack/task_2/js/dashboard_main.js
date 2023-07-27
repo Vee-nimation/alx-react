@@ -1,4 +1,3 @@
-import '../css/main.css';
 import $ from 'jquery';
 import _ from 'lodash';
 
@@ -16,4 +15,3 @@ function updateCounter() {
 };
 
 $('button').on('click', _.debounce(updateCounter, 500));
-
